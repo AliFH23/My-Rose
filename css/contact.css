@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  padding-top: 70px;
+  background-color: var(--light-color);
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.9) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: var(--main-color) !important;
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--main-color) !important;
+}
+
+.login-btn {
+  white-space: nowrap;
+  border-radius: 10px;
+  padding: 8px 18px;
+}
+
+.contact-header {
+  background: url('/images/hero.png') center/cover no-repeat;
+  color: white;
+  padding: 110px 20px;
+  position: relative;
+}
+
+.contact-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.contact-header .container {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-header h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.contact-header p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.contact-info,
+.contact-form-box {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contact-info h2,
+.contact-form-box h2 {
+  font-weight: bold;
+  color: var(--dark-color);
+  margin-bottom: 15px;
+}
+
+.contact-info p,
+.info-box p {
+  color: #555;
+  line-height: 1.8;
+}
+
+.info-box {
+  margin-bottom: 20px;
+}
+
+.info-box h5 {
+  color: var(--main-color);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-label {
+  font-weight: 500;
+  color: var(--dark-color);
+}
+
+.form-control {
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: none !important;
+}
+
+.form-control:focus {
+  border-color: var(--main-color);
+}
+
+.contact-form-box .btn-primary {
+  border-radius: 12px;
+  padding: 12px;
+}
+
+footer {
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .contact-header h1 {
+    font-size: 36px;
+  }
+
+  .contact-header p {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.8) !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: var(--main-color) !important;
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--main-color) !important;
+}
+.products-header {
+  background: url('/images/hero.png') center/cover no-repeat;
+  color: white;
+  padding: 120px 20px;
+  position: relative;
+}
+
+.products-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.products-header .container {
+  position: relative;
+  z-index: 1;
+}
+
+.products-header h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+.categories-links {
+  background: white;
+}
+
+.categories-links .btn {
+  border-radius: 30px;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+
+.categories-links .btn:hover {
+  background: var(--main-color);
+  color: rgb(0, 0, 0);
+}
+.product-card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.4s;
+  background: white;
+}
+
+.product-card img {
+  height: 250px;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+}
+.card-body h5 {
+  font-weight: bold;
+  color: var(--dark-color);
+}
+
+.card-body p {
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+.card-body button {
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.card-body button:hover {
+  background: var(--main-color);
+  color: rgb(0, 0, 0);
+  border-color: var(--main-color);
+}
+
+footer {
+  background: #222;
+  font-size: 14px;
+}
