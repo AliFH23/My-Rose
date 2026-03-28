@@ -56,8 +56,8 @@
 }
 
 .categories-links .btn:hover {
-  background: var(--main-color);
-  color: rgb(0, 0, 0);
+ background-color: rgb(128, 128, 128);
+  color: rgb(255, 255, 255);
 }
 .product-card {
   border: none;
@@ -97,8 +97,8 @@
 }
 
 .card-body button:hover {
-  background: var(--main-color);
-  color: rgb(0, 0, 0);
+  background-color: rgb(128, 128, 128);
+  color: rgb(255, 255, 255);
   border-color: var(--main-color);
 }
 
